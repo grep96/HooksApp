@@ -44,3 +44,11 @@ button{
   margin: 1em;
   padding: 0.2em;
 }
+
+.blue-button{
+  color: blue;
+}
+
+.red-button{
+  color: red;
+}
