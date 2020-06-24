@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+button{
+  background-color: chocolate;
+  color: white;
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.2em;
+}
