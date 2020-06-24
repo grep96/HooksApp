@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 
 function App() {
@@ -15,6 +15,17 @@ function App() {
       setAppCounter (appCounter - 1);
     }
   };
+
+  useEffect(
+    () => {
+      //Tutto il codice nel corpo della funzione verrà eseguito se si verifica l'evento componentDidMount
+      console.log('App.js componentDidMount');
+    return () => {
+      //Se voglio eseguire delle righe di codice durante l'evento componentWillMount devo mettere "return" e passargli una funzione
+      console.log('App.js componentWillUnmount');
+    }
+  },
+  []); //Il secondo parametro è un array vuoto, per intercettare uno dei due eventi (...DidMount / ...WillUnmount)
 
   return (
     <div className="App">
