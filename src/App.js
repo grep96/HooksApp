@@ -13,10 +13,10 @@ function App() {
   const handleClickApp = (sign) => {
     if (sign === "+"){
       setAppCounter (appCounter + 1);
-      setButtonClass ('red-button');
+      setButtonClass ('green-button');
     } else{
       setAppCounter (appCounter - 1);
-      setButtonClass ('blue-button');
+      setButtonClass ('red-button');
     }
   };
 
